@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Skills</title>
+    <style>
+      h1 {
+        color: white;
+        text-align: center;
+      }
+      .multiText {
+        text-align: center;
+        font-size: 50px;
+      }
+      .photo {
+        margin-top: 20px;
+        transition-delay: 5s;
+        margin: 0 auto;
+        transform: scale(1);
+      }
+      .pic:hover {
+        transform: scale(1.1);
+      }
+      .pica:hover {
+        transform: scale(1.1);
+      }
+      .pic {
+        margin-top: 30px;
+        width: 260px;
+        height: 260px;
+        margin-left: 90px;
+        transition: 0.5s;
+        transform: scale(1);
+      }
+      .pica {
+        height: 350px;
+        transition: 0.5s;
+        transform: scale(1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <nav>
+        <img src="img1.png" alt="" class="logo" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+
+          <li><a href="#">Skills</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <h1><span class="multiText"></span></h1>
+      <!-- <h5>SKills</h5> -->
+      <div class="photo">
+        <img src="html.png" class="pica" />
+        <img src="css.png" alt="" class="pic" />
+        <img src="js.png" alt="" class="pic" />
+        <img src="wordpress.png" alt="" class="pic" />
+      </div>
+    </div>
+  </body>
+</html>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+  var typingEffect = new Typed(".multiText", {
+    strings: ["Coder", "Web Developer", "WordPress Developer", "Blogger"],
+    loop: true,
+    typeSpeed: 100,
+    backSpeed: 80,
+    backDelay: 1500,
+  });
+</script>
